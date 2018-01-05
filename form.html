@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>web-form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="heading">
+      <h1>Let's talk</h1>
+      <p>Think you have what it takes? Shows us.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="p-information">
+      <h3>1. Personal information</h3>
+      <hr>
+    </div>
+  </div>
+  <form method="post">
+    <div class="row">
+      <div class="col-1">
+        <input type="text" placeholder="Full name*" class="full-name" required pattern="^[a-z]{2,}(\s[a-z]{2,})+">
+        <input type="email" placeholder="Email*" id="email" required>
+        <input type="text" placeholder="Re-enter email*" id="reEmail" required>
+      </div>
+      <div class="col-2">
+        <input type="tel" placeholder="Phone*" class="phone" required pattern="^(\+|0)\d{9,12}$">
+      </div>
+    </div>
+    <div class="row address">
+      <input type="text" placeholder="Address*">
+      <input type="text">
+    </div>
+    <div class="row">
+      <div class="city-info">
+        <div class="col-city">
+          <input type="text" placeholder="City*">
+        </div>
+        <div class="col-state">
+          <input type="text" placeholder="State*">
+        </div>
+        <div class="col-country">
+          <input type="text" placeholder="Country/Region*">
+        </div>
+        <div class="col-zip">
+          <input type="text" placeholder="Zip/Postal code*">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <input type="text" placeholder="How did you hear about us" class="how-hear">
+    </div>
+    <div class="row">
+      <div class="skill-location">
+        <h3>2. Skills and location</h3>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <h5>Which is your primary design discipline ?*</h4>
+        <div class="radio-buttons">
+            <input type="radio" name="primaryDesign" value="designResearch" id="designResearch" class="primary-design">
+            <label class="design-radio" for="designResearch">Design Research</label>
+            <input type="radio" name="primaryDesign" value="visualDesign" id="visualDesign" class="primary-design">
+            <label class="design-radio" for="visualDesign">Visual Design</label>
+            <input type="radio" name="primaryDesign" value="uxDesign" class="primary-design" id="uxDesign">
+            <label class="design-radio" for="uxDesign">UX Design</label>
+            <input type="radio" name="primaryDesign" value="frontEnd" class="primary-design" id="primaryDesign" >
+            <label class="design-radio" for="primaryDesign">Front-end Dev</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-experience" id="colExperience">
+          <h5>Do you have experience with any other disciplines?</h5>
+      <label class="check-label" for="visualDesign">Visual Design <span class="deleteSign">X</span>
+            <input type="checkbox" id="visualDesign">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label" for="uxDesign">UX Design <span class="deleteSign"> X</span>
+            <input type="checkbox" id="uxDesign">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label" for="frontEnd">Front-end Development <span class="deleteSign">X</span>
+            <input type="checkbox" id="frontEnd">
+            <span class="checkmark"></span>
+          </label>
+      <div>
+        <input type="text" placeholder="add experience" class="addInput" id="addInput">
+        <input type="button" value="Add" class="addButton" id="addButton">
+      </div>
+    </div>
+
+    <div class="col-interested">
+      <h5>Where are you interested in working?*</h5>
+      <p>You must be legally authorized to work without visa sponsorship in the location you choose.</p>
+      <label class="check-label">Austin, Texas
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label">New York, New York
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label">Toronto, Canada
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label">Shangghai, China
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label">Dublin, Ireland
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label">Hursley, United Kingdom
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label">Boeblingen, Germany
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      <label class="check-label">Somewhere else
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+    </div>
+    </div>
+    <div class="row">
+      <div class="portfolio">
+        <h3>3. Portfolio</h3>
+        <hr>
+        <h5>Prove you're IBM's next great designer by showing us who you are. What you've done. How you think. Tell us your story.</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="portfolio-link">
+        <input type="text" placeholder="Portfolio link*">
+      </div>
+    </div>
+    <div class="row">
+      <div class="textarea">
+        <textarea placeholder="Anything else (another link, availability, etc.)?"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+  <script type="text/javascript" src="form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #454e57;
+  font-family: sans-serif;
+}
+
+.heading {
+  text-align: center;
+  color: #fbffff;
+  margin-top: 15px;
+}
+
+.heading p {
+  padding-top: 10px;
+}
+
+.row {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.p-information hr, .skill-location hr, .portfolio hr {
+  background-color: #1886a9;
+  height: 2px;
+  border: none;
+}
+
+.p-information h3, .skill-location h3, .portfolio h3 {
+  margin-top: 30px;
+  color: #fbffff;
+  padding-bottom: 10px;
+}
+
+.col-1 {
+  width: 80%;
+  display: inline-block;
+}
+
+.col-2 {
+  height: 100%;
+  width: 19%;
+  display: inline-block;
+}
+
+input[type=text], input[type=email] {
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #989fa7;
+  background-color: #454e57;
+  padding-top: 30px;
+  color: white;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+  outline: none;
+}
+
+input[type=tel] {
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #989fa7;
+  background-color: #454e57;
+  margin-bottom: 89px;
+  float: right;
+  color: white;
+  outline: none;
+}
+
+.address {
+  padding-top: 20px;
+}
+
+.city-info {
+  display: inline-block;
+  width: 100%;
+}
+
+.col-city {
+  width: 24%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.col-state {
+  width: 24%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.col-country {
+  width: 24%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.col-zip {
+  width: 24%;
+  display: inline-block;
+}
+
+.how-hear {
+  margin-top: 20px;
+}
+
+.row h5 {
+  margin: 30px 0 20px 0;
+  color: #fbffff;
+}
+
+.primary-design {
+  visibility: hidden;
+}
+
+.design-radio {
+  color: #9ba2aa;
+  padding: 10px 20px;
+  border: 2px solid #9ba2aa;
+  background-color: #454e57;
+  cursor: pointer;
+  text-align: center;
+  width: 18.5%;
+  display: inline-block;
+}
+
+input[type="radio"]:checked+label {
+  border: 2px solid #1e587e;
+  background-color: #06aff0;
+}
+
+/**********col-experience******start*****/
+
+.col-experience, .col-interested {
+  float: left;
+  width: 50%;
+  display: inline-block;
+}
+
+.check-label {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  padding-bottom: 10px;
+  color: #a7acb2;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  border: 1px solid #fbffff;
+  background-color: #454e57;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+.check-label input:checked~.checkmark:after {
+  display: block;
+}
+
+.check-label .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[type=text].addInput {
+  float: left;
+  width: 60%;
+  border: 1px solid white;
+  text-align: center center;
+  padding: 10px 10px;
+}
+
+.addButton {
+  color: white;
+  width: 25%;
+  height: 35px;
+  float: right;
+  border: none;
+  margin-right: 5px;
+  background-color: green;
+  border: 1px solid white;
+}
+
+/***********col-experience*****end********/
+
+.col-interested p {
+  color: #a7acb2;
+  padding-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #81868c border-radius: 4px;
+  background-color: #454e57;
+  font-size: 16px;
+  resize: none;
+  margin-top: 25px;
+  color: white;
+  outline: none;
+}
+
+input[type=submit] {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #fbffff;
+  color: #fbffff;
+  padding: 18px 48px;
+  text-align: center;
+  background-color: #454e57;
+  margin-right: 47px;
+}
+
+/***************validation***********/
+
+input:focus:invalid {
+  border-bottom: 2px solid red;
+}
+
+/************js***********************/
+
+.deleteSign {
+  display: none;
+}
